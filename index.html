@@ -21,17 +21,27 @@
     </header>
     <main>
       <section class="code">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati
-        necessitatibus veritatis, earum sed saepe at perspiciatis eum ipsam
-        atque! Illum, voluptatum debitis rem aspernatur explicabo adipisci fuga
-        non magnam! Iste ipsam, fugit aperiam blanditiis et vero libero
-        necessitatibus omnis assumenda aspernatur possimus. Id in consequatur at
-        omnis ullam vel ipsum possimus ad aut laborum alias dolorem modi ipsa
-        cum libero officia inventore nostrum laudantium, totam explicabo eum
-        incidunt. Facilis, saepe, soluta ipsa aliquam molestiae iusto
-        exercitationem quos culpa quidem, blanditiis pariatur quam ut ratione!
-        Deserunt vel esse minus rerum tenetur necessitatibus sed! Aliquam odit
-        aspernatur assumenda illo repellendus natus.
+        <p>
+          function startGame(){ // console.log(this); // skjul start, slut
+          skærme document.querySelector("#game_over").classList.add("hide");
+          document.querySelector("#level_complete").classList.add("hide");
+          document.querySelector("#start").classList.add("hide");
+        </p>
+        <p>
+          // lyd for startspil
+          document.querySelector("#sound_start").currentTime = 0;
+          document.querySelector("#sound_start").play();
+        </p>
+        <p>
+          // de liv og point du har på start eller reset point = 0; liv = 3;
+          document.querySelector("#score").textContent = point;
+        </p>
+        <p>
+          //Vis alle liv
+          document.querySelector("#liv1").classList.remove("gray");
+          document.querySelector("#liv2").classList.remove("gray");
+          document.querySelector("#liv3").classList.remove("gray");
+        </p>
       </section>
       <!-- '''mit portfolio''' her -->
       <section class="splash-box">
