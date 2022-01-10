@@ -22,11 +22,13 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="forside">
       <section class="code">
         <p>
-          function startGame(){ // console.log(this); // skjul start, slut
-          skærme document.querySelector("#game_over").classList.add("hide");
+          function startGame(){ <br />
+          // console.log(this); <br />
+          // skjul start, slut skærme <br />
+          document.querySelector("#game_over").classList.add("hide");
           document.querySelector("#level_complete").classList.add("hide");
           document.querySelector("#start").classList.add("hide");
         </p>
@@ -36,7 +38,9 @@
           document.querySelector("#sound_start").play();
         </p>
         <p>
-          // de liv og point du har på start eller reset point = 0; liv = 3;
+          // de liv og point du har på start eller reset <br />
+          point = 0; <br />
+          liv = 3; <br />
           document.querySelector("#score").textContent = point;
         </p>
         <p>
@@ -47,7 +51,7 @@
         </p>
       </section>
       <!-- '''mit portfolio''' her -->
-      <section class="splash-box">
+      <section class="blue_box forside">
         <h2>Mit</h2>
         <h2>Portfolio</h2>
       </section>

@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Freya's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/tqq8yye.css" />
   </head>
   <body>
     <header>
+      <a class="logo_container" href="index.html"
+        ><img id="logo" src="/img/logo.svg" alt=""
+      /></a>
       <nav>
-        <!-- nav her -->
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="about.html">Om mig</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
       </nav>
-      <div class="title">
-        <!-- '''header her''' -->
-      </div>
     </header>
     <main>
       <div class="columns">
@@ -23,5 +29,6 @@
         <div class="column-three"></div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
