@@ -33,8 +33,11 @@ p {
 
 li {
   font-weight: 400;
-  /* margin-bottom: 1rem; */
   line-height: 22px;
+}
+ul,
+ol {
+  margin-bottom: 1rem;
 }
 ul {
   list-style-type: square;
@@ -303,10 +306,10 @@ main.about section {
   }
   .section_wrapper {
     display: flex;
-    margin: 0 0 5% 0;
+    margin: 5% 0 5% 0;
     gap: 1rem;
     justify-content: space-around;
-    /* place-items: center; */
+    place-items: center;
   }
   .section_wrapper.about_me {
     place-items: center;
@@ -382,39 +385,43 @@ main.about section {
   }
 
   .portfolio .col.two {
-    background: var(--main-blue);
-    aspect-ratio: 1;
-    width: 420px;
-    /* filter: grayscale(100%); */
-    position: relative;
-    transition: 0.3s;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .portfolio .col.one {
     width: 520px;
   }
 
-  .tema_02 .col.two {
-    background: url(/img/splashbillede.webp);
-    background-size: cover;
-  }
-  .tema_03 .col.two {
-    background: url(/img/splashUX.webp);
-    background-size: cover;
-    background-position: right;
+  .portfolio img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: left;
   }
 
-  .tema_04 .col.two {
-    background: url(/img/spilskærm.svg);
-    background-size: cover;
+  .tema_02 .image.two img {
+    object-position: 20% 0;
   }
 
-  .tema_05 .col.two {
-    background: url(/img/catering.png);
-    background-size: cover;
-    background-position: center;
+  .tema_02 .image.three img {
+    object-position: 9% 0;
   }
-  .portfolio section {
-    /* position: relative; */
+
+  .tema_03 .image.one img {
+    object-position: center;
+  }
+
+  .tema_04 .image.one img {
+    object-position: right;
+  }
+
+  .code_example {
+    font-family: anonymous-pro, monospace;
+    margin-left: 3rem;
+  }
+  .tema_05 .image img {
+    object-position: center;
   }
 }
